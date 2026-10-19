@@ -1,0 +1,11 @@
+# Wallpapers are binary. Without this, git will try to diff and, on some
+# platforms, apply text EOL mangling to JPEGs, which corrupts them.
+*.jpg    binary
+*.png    binary
+*.webp   binary
+
+# Keep markdown line endings exactly as authored.
+*.md     text eol=lf
+
+# Normalise anything else.
+*        text=auto
